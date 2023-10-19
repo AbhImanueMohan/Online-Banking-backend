@@ -1,0 +1,51 @@
+
+
+                              Back-End
+
+1. Create a bankapp backend folder
+2. Create package.json file - npm init
+3. Create index.js file as the entry point for the server app
+4. Install Express - npm i express
+5. Import express in index.json
+6. Using express , create an application : express()
+7. Setup port number for server application : server app.listen()
+8. Install cors (Cross-Orgin Resource Sharing)
+                  - to share data with different applications -npm i cors
+9. Import cors in index.js
+9. Use cors in server app : serverapp.use(cors())
+10. Parse json data to js in server app : use express.json()
+11. Resolving client requests
+     server-app.http-method('path',callaback function()=>{
+        response send back to client
+     })
+12. Auto Compilation - npm i -g nodemon 
+13. Install Postman 
+14. Nodeman compilation - nodeman file.js
+15. Connecting with mongodb database
+            ->mongoose(library)
+16. Install mongoose - npm i mongoose
+17. Create a folder services, inside it create a file - db.js and logic.js
+18. In db.js 
+            ->import mongoose 
+            ->Define connection string
+            ->Create model and schema
+            ->export model 
+19. In logic.js 
+            ->Create logic for api call
+            ->export the function
+20, authentication using JSON web token (jwt token)
+             -> It is a JSON web token(JWT) is JSON Object which is used to securely transfer information over the web.
+             -> Install -  npm i jsonwebtoken
+             -> To generate token - sign() - logic/login() -token generate
+             -> Using JSON Web token, generate token for user who logged successful
+             -> import jwt token in index.js
+             -> Verify token, when client request  after successfull login
+                   -> Login -> Token generate
+                   -> getBalance -> + Append token ->?Verify?
+21, Middleware
+             -> Control request response cycle
+             -> Arguents -> req, res, next
+             Types
+                 1. Application Specific Middleware
+                 2. Router Specific Middleware
+                 
